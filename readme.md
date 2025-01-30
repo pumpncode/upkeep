@@ -1,74 +1,29 @@
-# template
+# upkeep
 
-[![logo of pumpncode/template][logo-wide]][self]
+[![logo of pumpncode/upkeep][logo-wide]][self]
 
-This is the main template repository for our projects. It includes the basic structure and important configuration files for a modern JavaScript project.
-
----
-
-> [!NOTE]
-> "Unordered" lists in this document are ordered by priority from top to bottom, but aren't markdown ordered lists because they don't signify fixed sequences of steps.
->
-> This document uses emoji suffixes in some cases to possibly speed up your setup process by highlighting options you may or may not want to take into consideration:
->
-> - The suffix 💎 marks a **recommended** option or extra-step.
-> - The suffix 🤡 marks a possible but **not recommended** option.
-> - The suffixes 🍎 (macOS), 🪟 (Windows and [WSL][wsl]) and 🐧 (Linux) mark information or installation steps unique to **specific platforms**.
+This is the main repository for the upkeep project. upkeep is a comprehensive tool designed to streamline and automate the maintenance tasks of your JavaScript projects. It aims to include features for dependency management, code linting, and project initialization, making it easier to keep your projects up-to-date and consistent. For now, it just runs knip on your project.
 
 ## Getting Started
 
 ### Prerequisites
 
-If you're a developer, you'll presumably have those or working alternatives, feel free to skip to the [Installation section][installation]. This guide expects you have [Windows][windows], or a Unix or Unix-like operating system ([macOS][mac-os] for example) and a [modern browser][browsehappy] installed. This project should work on every imaginable modern system configuration, but your best bet would be to use a well established and popular one.
+To use upkeep, you need to have the following installed:
 
-- [GitHub Account][github-join] 💎
-- [Git][git]
-	- [macOS][git-macos] 🍎
-	- [Windows][git-windows] 🪟
-	- [Linux][git-linux] 🐧
 - [Deno][deno]
-- [Node.js][node-js] 💎
-	- [Use the download interface][node-js-download]
-- [A source-code editor][source-code-editors]
+- [Node.js][node-js]
 
 ### Installation
 
-1. Get the template
-	- Create a new repository from template 💎
-		1. Click "Use this template"
-			![Screenshot of "Use this template" button][screenshot-use-template]
-		2. Fill in the details, check "Include all branches" and click "Create repository from template"
-			![Screenshot of Create a new repository from template screen][screenshot-create-from-template]
-		3. Clone your new repository
-
-			```sh
-			git clone https://github.com/username/my-new-repository.git
-			```
-
-	- Create a new repository by cloning 🤡
-		> This completely defeats the purpose of the GitHub template feature, because normal clones (and forks) copy the whole commit history (and other things) but not all branches, which normally isn't what you want when creating a new project based on a boilerplate. Read more [here][github-docs-template].
-		1. Clone this repository into a new folder
-
-			```sh
-			git clone https://github.com/pumpncode/template.git my-new-repository
-			```
-
-2. Set it up
-	1. Go into your new repository folder
-
-		```sh
-		cd my-new-repository
-		```
-
-	2. Initialize the project
-
-		```sh
-		deno task initialize
-		```
+Install Knip and follow the guide at their [Getting Started][knip-getting-started] page.
 
 ## Usage
 
-Because this is a template, the usage depends on what your new project will do. Once everything is installed, you can try running the tasks in the [deno.json][deno-json], these make use of every other feature of this template.
+To use upkeep, run the following command:
+
+```sh
+deno run @jsr:@pumpn/upkeep
+```
 
 ## Roadmap
 
@@ -88,13 +43,7 @@ Pumpn Code - <office@pumpn.net>
 
 Nano Miratus - [@nnmrts][nnmrts-github] - <nanomiratus@gmail.com>
 
-Project Link: <https://github.com/pumpncode/template>
-
-## Acknowledgments
-
-- [unified][unified]
-- [remark][remark]
-- [Best-README-Template][best-readme-tempplate]
+Project Link: <https://github.com/pumpncode/upkeep>
 
 ## Contributors
 
@@ -106,33 +55,15 @@ Project Link: <https://github.com/pumpncode/template>
 
 [0BSD][license] © [Pumpn Code][pumpn-website]
 
-[logo-wide]: /media/images/logo/wide.svg
-[self]: https://github.com/pumpncode/template
-[wsl]: https://docs.microsoft.com/en-us/windows/wsl/about
-[installation]: #installation
-[windows]: https://www.microsoft.com/windows
-[mac-os]: https://www.apple.com/macos
-[browsehappy]: https://browsehappy.com
-[github-join]: https://github.com/join
-[git]: https://git-scm.com
-[git-macos]: https://git-scm.com/download/mac
-[git-windows]: https://git-scm.com/download/win
-[git-linux]: https://git-scm.com/download/linux
+[logo-wide]: https://github.com/pumpncode/logos/raw/refs/heads/main/projects/upkeep/wide.svg
+[self]: https://github.com/pumpncode/upkeep
 [deno]: https://deno.com
 [node-js]: https://nodejs.org
-[node-js-download]: https://nodejs.org/en/download
-[source-code-editors]: https://en.wikipedia.org/wiki/Source-code_editor#Notable_examples
-[screenshot-use-template]: /media/images/screenshots/use-template.png
-[screenshot-create-from-template]: /media/images/screenshots/create-from-template.png
-[github-docs-template]: https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template#about-repository-templates
-[deno-json]: /deno.json
-[projects]: https://github.com/pumpncode/template/projects
-[issues]: https://github.com/pumpncode/template/issues
+[projects]: https://github.com/pumpncode/upkeep/projects
+[issues]: https://github.com/pumpncode/upkeep/issues
 [contributing]: https://github.com/pumpncode/.github/contributing.md
 [code-of-conduct]: https://github.com/pumpncode/.github/code-of-conduct.md
 [nnmrts-github]: https://github.com/nnmrts
-[unified]: https://unifiedjs.com
-[remark]: https://github.com/remarkjs
-[best-readme-tempplate]: https://github.com/othneildrew/Best-README-Template
 [license]: /license.md
 [pumpn-website]: https://pumpn.net
+[knip-getting-started]: https://knip.dev/overview/getting-started

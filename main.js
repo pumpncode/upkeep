@@ -1,11 +1,15 @@
-/**
- *
- * @example
- */
-const helloWorld = () => {
-	console.info("Hello World!");
-};
+/* eslint-disable import-x/unambiguous -- CLI */
+const {
+	Command
+} = Deno;
 
-helloWorld();
+const npxKnipCommand = new Command(
+	"npx",
+	{
+		args: ["knip"],
+		stderr: "inherit",
+		stdout: "inherit"
+	}
+);
 
-export default helloWorld;
+await npxKnipCommand.output();
